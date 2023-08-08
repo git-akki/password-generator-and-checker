@@ -1,0 +1,199 @@
+*,
+*:before,
+*:after {
+    padding: 0;
+    margin: 0;
+    box-sizing: border-box;
+}
+
+body {
+    font-family: 'Poppins', sans-serif;
+    text-align: center;
+    background-color: black;
+    animation: background;
+    animation-duration: 30s;
+    animation-fill-mode: forwards;
+    animation-iteration-count: infinite;
+
+}
+
+.wrapper {
+    background-color: #ffffff;
+    width: 450px;
+    
+    padding: 50px 50px;
+    position: absolute;
+    transform: translate(-50%, -50%);
+    left: 50%;
+    top: 50%;
+    border-radius: 8px;
+    box-shadow: 0 20px 25px rgba(0, 0, 0, 0.2);
+}
+
+.container {
+    width: 300px;
+    position: relative;
+    margin: auto;
+}
+
+input,
+p {
+    
+    width: 300px;
+    position: relative;
+    margin: auto;
+}
+
+input {
+    width: 100%;
+    height: 50px;
+    padding: 0 40px 0 20px;
+    position: relative;
+    background-color: #f5f5f5;
+    border: none;
+    outline: none;
+    border-radius: 5px 5px 0 0;
+}
+
+#toggle {
+    position: absolute;
+    top: 17px;
+    right: 15px;
+    color: #808080;
+    cursor: pointer;
+}
+
+
+.strength {
+    width: 25%;
+    display: inline-block;
+    position: relative;
+    height: 100%;
+    bottom: 5px;
+}
+
+#strength-bar {
+    background-color: #dcdcdc;
+    height: 10px;
+    position: relative;
+}
+
+p {
+    width: 100%;
+    text-align: center;
+    margin-top: 2px;
+    padding: 100px;
+}
+
+textarea:focus {
+
+    animation: border-color-change;
+    animation-duration: 10s;
+    animation-fill-mode: forwards;
+    animation-timing-function: linear;
+    animation-iteration-count: infinite;
+
+}
+
+@keyframes background {
+    0% {
+        background-color: rgb(115, 168, 87);
+    }
+
+    50% {
+        background-color: skyblue;
+    }
+
+    100% {
+        background-color: #1ddf44;
+    }
+
+}
+
+@keyframes border-color-change {
+    0% {
+        border: 3px solid white;
+    }
+
+    100% {
+        border: 3px solid black;
+    }
+
+}
+
+#generate-button {
+    background-color: #4CAF50;
+    /* Green */
+    text-decoration: none;
+    color: white;
+    padding: 12px 20px;
+    border-radius: 8px;
+    font-size: 18px;
+    cursor: pointer;
+    border: none;
+    text-transform: uppercase;
+    letter-spacing: 1px;
+    transition: background-color 0.3s ease;
+}
+
+#generate-button:hover {
+
+    background-color: #3e8e41;
+    /* Darker Green */
+}
+
+#generate-button:active {
+    background-color: #357a38;
+    /* Even Darker Green */
+}
+#generate-button.a{
+    text-decoration: none;
+    text-decoration-line: none;
+}
+
+
+h2 {
+    margin: 150px 50px 50px 50px;
+    color: #030303;
+
+}
+h1 {
+    margin: 150px 50px 50px 50px;
+    color: white;
+    font-family: 'Poppins', sans-serif;
+
+}
+
+
+button {
+    background-color: #4CAF50;
+    /* Green */
+    border: none;
+    color: white;
+    padding: 25px 50px;
+    text-align: center;
+    text-decoration: none;
+    display: inline-block;
+    font-size: 16px;
+    margin: 50px 10px;
+    cursor: pointer;
+}
+
+button:hover {
+    background-color: #3e8e41;
+}
+a:link {
+    text-decoration: none;
+}
+
+a:visited {
+    text-decoration: gray;
+}
+
+a:hover {
+    text-decoration: none;
+}
+
+a:active {
+    text-decoration: none;
+}
